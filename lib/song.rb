@@ -47,7 +47,7 @@ class Song
     names=filename.split(" - ")
     names.each do |name|
       if name.include?(".mp3")
-        name.pop(4)
+        name.chomp(".mp3")
       end
     end
   end
