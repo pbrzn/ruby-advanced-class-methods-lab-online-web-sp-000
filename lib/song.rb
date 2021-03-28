@@ -51,5 +51,6 @@ class Song
     song=self.new_by_name(name)
     @artist=artist_name
     song.artist_name=artist_name
+    song
   end
 end
