@@ -48,6 +48,7 @@ class Song
     names.each do |name|
       if name.include?(".mp3")
         name.chomp(".mp3")
+        names
       end
     end
   end
