@@ -44,7 +44,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    name=filename.split(/(( - )|[.])/).
+    name=filename.split(/(( - )|[.])/).delete_at(0, 2).to_s
     song=self.new_by_name(name)
   end
 end
