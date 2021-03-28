@@ -44,6 +44,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    filename.split("- ").unshift.
-  
+    name=filename.split("- ").shift.to_s
+    name.pop(4)
+    song=self.new_by_name(name)
 end
