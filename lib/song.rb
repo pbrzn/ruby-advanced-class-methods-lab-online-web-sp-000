@@ -44,7 +44,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    names=filename.split("-")
+    names=filename.split(" - ")
     names.each do |name|
       if name.include?(".mp3")
         name.pop(4)
