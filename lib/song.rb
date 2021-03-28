@@ -44,10 +44,11 @@ class Song
   end
   
   def self.new_from_filename(filename)
-    filename.split(/(( - )|[.])/)
-    name=filename[2]
-    @artist
-    song=self.new_by_name(name)
-    
+    names=filename.split("-")
+    names.each do |name|
+      if name.include?(".mp3")
+        name.pop(4)
+      end
+    end
   end
 end
