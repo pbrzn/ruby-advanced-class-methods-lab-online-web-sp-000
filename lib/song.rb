@@ -20,5 +20,6 @@ class Song
     @name=name
     song=self.new
     song.name=name
+    song
   end
 end
